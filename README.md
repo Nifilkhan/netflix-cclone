@@ -1,18 +1,52 @@
-# ProjectMovie
+# Netflix-Clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+This project is a fully functional Netflix clone built with Angular, using the TMDb API to fetch and display movie and TV show data. The app replicates the Netflix browsing experience with a sleek, responsive interface that allows users to explore popular, trending, and top-rated content. It includes the ability to watch trailers directly from the movie or TV show details page, enhancing the user's viewing experience. Additionally, each movie and TV show page provides a list of similar recommendations, making it easier for users to discover related content. The dynamic search feature allows users to find movies or shows by title with live results, while detailed information such as ratings, synopsis, release dates, and cast are available for every item. This project demonstrates my ability to integrate third-party APIs with Angular, create dynamic user interfaces, and deliver an engaging and responsive web experience.
 
-## Development server
+## Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ensure you have the following installed:
 
-## Code scaffolding
+- [Node.js](https://nodejs.org/) (version 14 or later)
+- [Angular CLI](https://angular.io/cli) (install via npm)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup
 
-## Build
+1. **Clone the Repository**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+   ```bash
+   git clone https://github.com/yourusername/weatherapptest.git
+   cd weatherapptest
+
+
+## Installation
+
+Install Dependencies
+
+```bash
+cd netflix-clone
+npm install
+
+```
+    
+## Environment Variables
+
+In order to use the TMDb API in the project, you'll need to add the API URL, query parameters, and headers (including Authorization) to the environment configuration.
+
+`tmdbApiUrl`
+
+`Query Parameters: Configure options like include_adult, include_video, language, page, and sort_by to customize your movie results.`
+
+
+`Accept: Use application/json to get JSON responses.`
+`Authorization: Replace 'YOUR_API_KEY_HERE' with your TMDb API key for authentication.`
+
+## Run the project using angular cli
+
+
+```bash
+  ng serve
+```
+
 
 ## Running unit tests
 
