@@ -50,7 +50,7 @@ In order to use the TMDb API in the project, you'll need to add the API URL, que
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [jest]([jestjs.io](https://github.com/jestjs/jest)).
+Run `ng test` to execute the unit tests via [jest](https://github.com/jestjs/jest).
 
 ## Running end-to-end tests
 
