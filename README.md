@@ -14,8 +14,8 @@ Ensure you have the following installed:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/weatherapptest.git
-   cd weatherapptest
+   git clone https://github.com/Nifilkhan/netflix-clone
+   cd netflix-clone
 
 
 ## Installation
