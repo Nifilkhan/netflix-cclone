@@ -1,0 +1,12 @@
+
+<app-banner [bannerData]=" banner |async" [id]="video |async"/>
+<div *ngFor="let gener of geners">
+  <app-movie-carousel *ngIf="moviesByGenre[gener.name]" 
+                     [mainContent]="moviesByGenre[gener.name]" 
+                     [generName]="gener.name"
+                     (loadMoreMovies)="onLoadMoreMovies()"
+                     >
+  </app-movie-carousel>
+</div>
+
+

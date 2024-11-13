@@ -1,0 +1,30 @@
+  <div *ngIf="mainContent.length > 5">
+    <div class="container px-20 mt-14 mb-20 w-full">
+      <p class="font-semibold text-2xl my-3 ml-3">{{ generName }}</p>
+      <p-carousel
+        [value]="mainContent"
+        [numVisible]="5"
+        [numScroll]="1"
+        [circular]="false"
+        [showIndicators]="true"
+        class="custom-carousel"
+      >
+        <ng-template pTemplate="item" let-movie>
+          <div class="p-carousel-item">
+            <a (click)="getMovieDtails(movie.id)" class="tag">
+              <img
+                [src]="movie.poster_path | imagePipe"
+                alt="{{ movie.original_title }}"
+                class="w-full rounded-lg shadow-lg"
+              />
+            </a>
+            <div class="desc p-2">
+              <span class="text-base flex flex-wrap font-bold">{{
+                movie.original_title
+              }}</span>
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  </div>

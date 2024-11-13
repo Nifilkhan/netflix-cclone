@@ -1,0 +1,6 @@
+<app-header (searchResults)="handleSearchResults($event)"></app-header>
+
+<app-search *ngIf="searchResults.length > 0" [searchMovies]="searchResults" ></app-search>
+<main class="h-full text-neutral-200 bg-[#141414] overflow-x-hidden main-class">
+    <router-outlet />
+</main>

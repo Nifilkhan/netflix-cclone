@@ -1,0 +1,20 @@
+<div *ngIf="searchMovies.length > 0" class="search-results">
+    <h2 class="results-title">Searching results for: {{ query }}</h2>
+    <div class="movies-grid">
+      <div *ngFor="let movie of searchMovies" class="movie-card">
+        <a (click)="loadDetails(movie.id)" alt="" class="details">
+        <img
+          [src]="'https://image.tmdb.org/t/p/w500/' + movie.poster_path"
+          alt="{{ movie.original_title }} poster"
+          class="movie-image"
+        />
+    </a>
+        <h3 class="movie-title">{{ movie.original_title }}</h3>
+      </div>
+    </div>
+  </div>
+  
+
+  <app-no-movie *ngIf="searchMovies.length === 0"></app-no-movie>
+
+
